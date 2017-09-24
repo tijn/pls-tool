@@ -1,8 +1,10 @@
-name: pls
+name: pls-tool
 version: 0.1.0
 
 authors:
   - Tijn Schuurmans <tijn@tijnschuurmans.nl>
+
+description: A command line tool to show the information in a PLS playlist
 
 targets:
   pls:
@@ -10,8 +12,7 @@ targets:
 
 dependencies:
   pls:
-    # github: tijn/pls.cr
-    path: "../pls"
+    github: tijn/pls.cr
     version: 0.1.0
 
 crystal: 0.23.1

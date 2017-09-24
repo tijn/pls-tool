@@ -11,6 +11,7 @@ A command-line tool to show the information in PLS files.
 ## Usage
 
 ```sh
+$ ./pls --help
 Usage: pls [OPTION]... PLS-FILE...
 
     -a, --all                        Show all information (by default it only shows the file entries)
@@ -23,7 +24,7 @@ Usage: pls [OPTION]... PLS-FILE...
 By default it outputs all the files listed in the pls:
 
 ```sh
-pls ~/Music/Radio/Indie_XL.pls
+$ ./pls ~/Music/Radio/Indie_XL.pls
 http://server-23.stream-server.nl:8438/
 ```
 
