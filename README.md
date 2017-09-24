@@ -1,22 +1,48 @@
-# pls
+# pls-tool
 
-TODO: Write a description here
+A command-line tool to show the information in PLS files.
 
 ## Installation
 
-TODO: Write installation instructions here
+- clone it
+- compile it
+- put the binary somewhere (~/bin or /usr/local/bin or ...wherever you like)
 
 ## Usage
 
-TODO: Write usage instructions here
+```sh
+Usage: pls [OPTION]... PLS-FILE...
+
+    -a, --all                        Show all information (by default it only shows the file entries)
+    -h, --help                       Display this screen
+    -v, --verbose                    Verbose output (also outputs the filename of the pls)
+```
+
+### some examples:
+
+By default it outputs all the files listed in the pls:
+
+```sh
+pls ~/Music/Radio/Indie_XL.pls
+http://server-23.stream-server.nl:8438/
+```
+
+You can also show the other fields, titles and lengts if they are provided.
+
+```sh
+$ ./pls -a ~/Music/Radio/Indie_XL.pls
+File:   http://server-23.stream-server.nl:8438/
+Title:  (#1) Indie XL
+Length: stream
+```
 
 ## Development
 
-TODO: Write development instructions here
+Clone it and improve it.
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/pls/fork )
+1. Fork it ( https://github.com/tijn/pls-tool/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -24,4 +50,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Tijn Schuurmans - creator, maintainer
+- [tijn](https://github.com/tijn) Tijn Schuurmans - creator, maintainer
