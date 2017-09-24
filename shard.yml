@@ -1,0 +1,19 @@
+name: pls
+version: 0.1.0
+
+authors:
+  - Tijn Schuurmans <tijn@tijnschuurmans.nl>
+
+targets:
+  pls:
+    main: src/pls.cr
+
+dependencies:
+  pls:
+    # github: tijn/pls.cr
+    path: "../pls"
+    version: 0.1.0
+
+crystal: 0.23.1
+
+license: MIT
