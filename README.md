@@ -28,7 +28,7 @@ $ ./pls ~/Music/Radio/Indie_XL.pls
 http://server-23.stream-server.nl:8438/
 ```
 
-You can also show the other fields, titles and lengts if they are provided.
+You can also show the other fields, titles and lengths if they are provided.
 
 ```sh
 $ ./pls -a ~/Music/Radio/Indie_XL.pls
