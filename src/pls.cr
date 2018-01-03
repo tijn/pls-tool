@@ -35,7 +35,7 @@ module Plstool
   ARGV.each_with_index do |arg, index|
     puts "\n" if options[:verbose] && index > 0
     puts "# #{arg}:\n\n" if options[:verbose]
-    pls = Pls::Playlist.parse(File.read(arg))
+    pls = PLS::Playlist.parse(File.read(arg))
     if options[:all]
       puts pls.to_s
     else
